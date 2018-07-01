@@ -1,0 +1,237 @@
+@import "_normalize";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo-regular-webfont.eot') format('eot'),
+    	url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-regular-webfont.woff') format('woff'),
+         url('../fonts/aleo-regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+$color-blue: #5474fd;
+$color-blue2: #3259fc;
+
+
+* {
+	box-sizing: border-box;
+	transition: all .25s;
+}
+
+html {
+	height: 100%;
+	font-size: 10px;
+}
+
+body {
+	font: 400 1.4rem/1.8 'Josefin Sans', sans-serif;
+	min-height: 100%;
+	color: #fff;
+}
+.first {
+	height: calc(100vh - 80px);
+	outline: 1px solid red;
+	background-image: url('../img/bg1.jpg');
+}
+
+.header {
+		background-color: $color-blue;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		.header-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+		.logo {
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			&:hover,
+			&:focus {
+
+				transition: all 7s ease;
+				-webkit-transform: rotate(21deg);
+	-moz-transform: rotate(21deg);
+	-o-transform: rotate(21deg);
+	writing-mode: lr-tb;
+			}
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			line-height: 1;
+
+		}
+		.menu {
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			
+		& li {
+			display: inline-block;
+			
+			& a {
+				font-size: 14px;
+				font-family: 'aleo regular';
+				margin-left: 60px;
+				border: 1px solid transparent;
+				&:hover,
+				&:focus {
+					border-bottom: 1px solid #fff;
+					color: #fff;
+				}
+			}
+		}
+		}
+	}
+	}
+
+.container {
+	min-width: 1024px;
+	max-width: 1110px;
+
+	
+	margin: 0 auto;
+	outline: 1px solid black;
+}
+
+.searching {
+	width: 650px;
+	margin: 0 auto;
+	outline: 1px solid green;
+	padding-top: 20vh;
+	text-align: center;
+}
+
+.searching__logo {
+	margin: 0 auto;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.searching__title {
+	margin: 0 auto;;
+	font-size: 48px;
+	font-family: 'Josefin Sans', sans-serif;
+	// font-weight: 700;
+	letter-spacing: 2px;
+	line-height: 1;
+	text-transform: uppercase;
+	display: block;
+	}
+.searching__subtitle {
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	padding-bottom: 50px;
+	font-family: 'Josefin Sans', sans-serif;
+	}
+.searching__search {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 15vh;
+		.search,
+		.btn {
+		height: 60px;
+		border: 2px solid #fff;
+		}
+		.search {
+		width: 500px;		
+		color: #999;
+		text-align: center;
+		padding: 0 15px;
+		&:hover,
+		&:focus {
+			border: 2px solid $color-blue;
+		}
+		}
+		.btn {
+		width: 150px;
+		background-color: $color-blue;
+		font-family: 'aleo regular';
+		font-size: 16px;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 2px;
+		padding: 0 15px;
+		color: #fff;
+		&:hover,
+		&:focus {
+			background-color: $color-blue2;
+		}
+		.icon_search {
+			margin-left: 4px;
+			display: inline-block;
+			vertical-align: middle;
+			}
+		}
+	}
+	.scroll {
+		font-size: 14px;
+		color: #fff;
+		text-decoration: none;
+		letter-spacing: 2px;
+		// display: inline-block;
+		margin: 0 auto;
+		&:hover,
+		&:focus {
+			transform: translateY(5px);
+		}
+		span {
+			display: block;
+			padding-bottom: 15px;
+		}
+		.scroll-arrow {		
+			transform: rotate(-90deg);
+		}
+
+	}
+
+.section__two {
+	background-image: url('../img/bg2.jpg');
+	background-size: center;
+	padding: 120px 0;
+	
+	.block__article {
+		flex-basis: 48%;
+	.title {
+		padding-top: 80px;
+	}
+	
+	
+	}
+	.block__img {
+		flex-basis: 48%;
+		text-align: right;
+		img {
+			height: 220px;
+				
+		}
+		img:nth-child(odd) {
+			margin-right: 20%;
+		}
+	}
+}
+	
+.flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+.title {
+		font-family: 'aleo regular';
+		font-size: 36px;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+		letter-spacing: 2px;
+	}
+
+.text {
+		color: #fff;
+		padding: 20px 0;
+	}
